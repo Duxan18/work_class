@@ -1,3 +1,7 @@
+from math import sqrt
+
+
+
 print("\t\tPráctica 1: Ubicar un punto en el plano cartesiano\n")
 
 x = float(input("Por favor ingrese el valor de X\n"))
@@ -32,3 +36,12 @@ if x > -y:
       print("El punto se encuentra por debajo de la línea X = -Y")
 else:
       print("El punto se encuentra por encima de la línea X = -Y")
+
+v_x = x**2
+v_y = y**2
+
+resultado = v_x + v_y
+
+r_sqrt = sqrt(resultado)
+
+print(round(r_sqrt,1))
