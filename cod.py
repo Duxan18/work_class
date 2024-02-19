@@ -1,6 +1,5 @@
 from math import sqrt
-
-
+import math
 
 print("\t\tPráctica 1: Ubicar un punto en el plano cartesiano\n")
 
@@ -37,11 +36,13 @@ if x > -y:
 else:
       print("El punto se encuentra por encima de la línea X = -Y")
 
-v_x = x**2
-v_y = y**2
+v_x = int(x**2)
+v_y = int(y**2)
 
 resultado = v_x + v_y
 
-r_sqrt = sqrt(resultado)
+r_sqrt = round(sqrt(resultado), 1)
 
-print(round(r_sqrt,1))
+cir = round((r_sqrt * math.pi), 1)
+
+print("El resultado de la circunferencia es ", cir, " y su distancia es ", r_sqrt)
