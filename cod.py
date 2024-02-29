@@ -86,4 +86,4 @@ elif option_el == "2":
         print("El punto está fuera del triángulo.")
 
 elif option_el == "3":
-    print("\nCancelado.")
+    print("\nCancelando...")
